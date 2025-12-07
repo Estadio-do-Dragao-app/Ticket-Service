@@ -1,0 +1,26 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres_dev
+    ports:
+      - "${DB_PORT}:5432"
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./db/ddl.sql:/docker-entrypoint-initdb.d/ddl.sql
+      - ./db/dml.sql:/docker-entrypoint-initdb.d/dml.sql
+  fastapi:
+    build: .
+    container_name: fastapi_app
+    ports:
+      - "${API_PORT}:8000"
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+volumes:
+  postgres_data:
