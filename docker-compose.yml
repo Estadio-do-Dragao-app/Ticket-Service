@@ -22,5 +22,7 @@ services:
       - .env
     depends_on:
       - postgres
+    volumes:
+      - ./qr_codes:/app/qr_codes
 volumes:
   postgres_data:

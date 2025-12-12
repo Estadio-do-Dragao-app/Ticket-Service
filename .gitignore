@@ -3,6 +3,13 @@
 .env.local
 .env.*.local
 
+# QR codes generated
+qr_codes/
+*.png
+
+# Audit logs
+ticket_audit.log
+
 # Python
 __pycache__/
 *.py[cod]

@@ -7,4 +7,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD uvicorn api_handler:app --host $API_HOST --port $API_PORT
+# Dar permissão de execução ao script de startup
+RUN chmod +x startup.sh
+
+# Criar diretório para QR codes
+RUN mkdir -p /app/qr_codes
+
+CMD ["./startup.sh"]
