@@ -17,12 +17,10 @@ services:
     build: .
     container_name: fastapi_app
     ports:
-      - "${API_PORT}:8000"
+      - "${API_PORT}:${API_PORT}"
     env_file:
       - .env
     depends_on:
       - postgres
-    volumes:
-      - ./qr_codes:/app/qr_codes
 volumes:
   postgres_data:

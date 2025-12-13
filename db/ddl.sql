@@ -22,5 +22,8 @@ create table tickets (
     ticket_type varchar(250) not null,
     state boolean not null,
 
+    -- ID do lugar no Map-Service (ex: Seat-Norte-T0-R05-12)
+    seat_node_id varchar(100),
+
     foreign key (event_id) references events(id)
 );

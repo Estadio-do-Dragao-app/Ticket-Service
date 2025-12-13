@@ -59,6 +59,7 @@ class Ticket(BaseModel):
     sector_id: str
     ticket_type: str
     state: bool
+    seat_node_id: str | None = None  # ID do seat no Map-Service (ex: Seat-Norte-T0-R05-12)
     
     class Config:
         json_encoders = {
@@ -147,8 +148,8 @@ async def create_ticket(ticket: Ticket):
     try:
         cursor = conn.cursor(cursor_factory=RealDictCursor)
         cursor.execute(
-            "INSERT INTO tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state) VALUES (%s, %s, %s, %s, %s, %s, %s, %s) RETURNING *",
-            (ticket.event_id, ticket.gates_open, ticket.gate_id, ticket.row_id, ticket.seat_id, ticket.sector_id, ticket.ticket_type, ticket.state)
+            "INSERT INTO tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s) RETURNING *",
+            (ticket.event_id, ticket.gates_open, ticket.gate_id, ticket.row_id, ticket.seat_id, ticket.sector_id, ticket.ticket_type, ticket.state, ticket.seat_node_id)
         )
         new_ticket = cursor.fetchone()
         conn.commit()
