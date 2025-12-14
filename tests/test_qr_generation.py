@@ -4,6 +4,7 @@ import sys
 import tempfile
 from io import StringIO
 from unittest.mock import patch
+import generate_qr
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 from generate_qr import generate_secure_token, generate_qr
