@@ -28,10 +28,10 @@ def setup_database():
     )
     
     # Executa os scripts SQL
-    with open('ddl.sql', 'r') as f:
+    with open('db/ddl.sql', 'r') as f:
         ddl_sql = f.read()
     
-    with open('dml.sql', 'r') as f:
+    with open('db/dml.sql', 'r') as f:
         dml_sql = f.read()
     
     cursor = conn.cursor()

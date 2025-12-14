@@ -1,6 +1,12 @@
 import pytest
 import json
 from datetime import datetime
+from fastapi.testclient import TestClient
+from api_handler import app, generate_qr_token
+
+@pytest.fixture
+def client():
+    return TestClient(app)
 
 def test_get_ticket(client):
     """Testa obtenção de ticket por ID"""
@@ -31,16 +37,8 @@ def test_create_ticket(client):
 
 def test_scan_qr_code(client):
     """Testa leitura de QR code"""
-    # Primeiro precisamos gerar um token válido
     ticket_id = 1
-    # Usando a mesma lógica do startup.sh para gerar o token
-    import hmac
-    import hashlib
-    import os
-    
-    secret = os.getenv('QR_SECRET', 'test-secret-key-for-testing-only')
-    signature = hmac.new(secret.encode(), str(ticket_id).encode(), hashlib.sha256).hexdigest()[:16]
-    token = f"{ticket_id}:{signature}"
+    token = generate_qr_token(ticket_id)
     
     response = client.get(f"/ticket/scan/{token}")
     assert response.status_code == 200
