@@ -58,17 +58,8 @@ jobs:
         env:
           PGPASSWORD: test_password
         run: |
-          echo "Current directory: $(pwd)"
-          echo "Files in directory:"
-          ls -la
-          
-          # Usar caminho completo para os arquivos SQL
-          echo "Running ddl.sql..."
-          psql -h localhost -U test_user -d test_db -f "$(pwd)/ddl.sql"
-          
-          echo "Running dml.sql..."
-          psql -h localhost -U test_user -d test_db -f "$(pwd)/dml.sql"
-          
+          psql -h localhost -U test_user -d test_db -f "db/ddl.sql"
+          psql -h localhost -U test_user -d test_db -f "db/dml.sql"
           echo "Database setup complete!"
 
       - name: Verify database setup
