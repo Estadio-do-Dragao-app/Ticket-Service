@@ -1,27 +1,53 @@
 insert into events (event_name, event_date) values ('Jogo Demo', '2024-09-15 20:00:00');
 
-insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id)
-values (
-    1,
-    '2024-09-15 19:00:00',
-    'Gate A',
-    'Row 5',
-    'Seat 12',
-    'Norte',
-    'VIP',
-    true,
-    'Seat-Norte-T0-R05-12'  -- ID do seat no Map-Service
-);
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 2', 'Seat 2', 'Sul', 'Standard', false, 'Seat-Sul-T0-R02-02');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 3', 'Seat 3', 'Este', 'Standard', false, 'Seat-Este-T0-R03-03');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 4', 'Seat 4', 'Oeste', 'Standard', false, 'Seat-Oeste-T0-R04-04');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 5', 'Seat 5', 'Norte', 'Standard', false, 'Seat-Norte-T0-R05-05');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 6', 'Seat 6', 'Sul', 'Standard', false, 'Seat-Sul-T0-R06-06');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 7', 'Seat 7', 'Este', 'Standard', false, 'Seat-Este-T0-R07-07');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 8', 'Seat 8', 'Oeste', 'Standard', false, 'Seat-Oeste-T0-R08-08');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 9', 'Seat 9', 'Norte', 'Standard', false, 'Seat-Norte-T0-R09-09');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 10', 'Seat 10', 'Sul', 'Standard', false, 'Seat-Sul-T0-R10-10');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 11', 'Seat 11', 'Este', 'Standard', false, 'Seat-Este-T0-R11-11');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 12', 'Seat 12', 'Oeste', 'Standard', false, 'Seat-Oeste-T0-R12-12');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 13', 'Seat 13', 'Norte', 'Standard', false, 'Seat-Norte-T0-R13-13');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 14', 'Seat 14', 'Sul', 'Standard', false, 'Seat-Sul-T0-R14-14');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 15', 'Seat 15', 'Este', 'Standard', false, 'Seat-Este-T0-R15-15');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 16', 'Seat 16', 'Oeste', 'Standard', false, 'Seat-Oeste-T0-R16-16');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 17', 'Seat 17', 'Norte', 'Standard', false, 'Seat-Norte-T0-R17-17');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 18', 'Seat 18', 'Sul', 'Standard', false, 'Seat-Sul-T0-R18-18');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 19', 'Seat 19', 'Este', 'Standard', false, 'Seat-Este-T0-R19-19');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 20', 'Seat 20', 'Oeste', 'Standard', false, 'Seat-Oeste-T0-R20-20');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 1', 'Seat 21', 'Norte', 'Standard', false, 'Seat-Norte-T0-R01-21');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 2', 'Seat 22', 'Sul', 'Standard', false, 'Seat-Sul-T0-R02-22');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 3', 'Seat 23', 'Este', 'Standard', false, 'Seat-Este-T0-R03-23');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 4', 'Seat 24', 'Oeste', 'Standard', false, 'Seat-Oeste-T0-R04-24');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 5', 'Seat 25', 'Norte', 'Standard', false, 'Seat-Norte-T0-R05-25');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 6', 'Seat 26', 'Sul', 'Standard', false, 'Seat-Sul-T0-R06-26');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 7', 'Seat 27', 'Este', 'Standard', false, 'Seat-Este-T0-R07-27');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 8', 'Seat 28', 'Oeste', 'Standard', false, 'Seat-Oeste-T0-R08-28');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 9', 'Seat 29', 'Norte', 'Standard', false, 'Seat-Norte-T0-R09-29');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 10', 'Seat 30', 'Sul', 'Standard', false, 'Seat-Sul-T0-R10-30');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 11', 'Seat 1', 'Este', 'Standard', false, 'Seat-Este-T0-R11-01');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 12', 'Seat 2', 'Oeste', 'Standard', false, 'Seat-Oeste-T0-R12-02');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 13', 'Seat 3', 'Norte', 'Standard', false, 'Seat-Norte-T0-R13-03');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 14', 'Seat 4', 'Sul', 'Standard', false, 'Seat-Sul-T0-R14-04');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 15', 'Seat 5', 'Este', 'Standard', false, 'Seat-Este-T0-R15-05');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 16', 'Seat 6', 'Oeste', 'Standard', false, 'Seat-Oeste-T0-R16-06');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 17', 'Seat 7', 'Norte', 'Standard', false, 'Seat-Norte-T0-R17-07');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 18', 'Seat 8', 'Sul', 'Standard', false, 'Seat-Sul-T0-R18-08');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 19', 'Seat 9', 'Este', 'Standard', false, 'Seat-Este-T0-R19-09');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 20', 'Seat 10', 'Oeste', 'Standard', false, 'Seat-Oeste-T0-R20-10');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 1', 'Seat 11', 'Norte', 'Standard', false, 'Seat-Norte-T0-R01-11');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 2', 'Seat 12', 'Sul', 'Standard', false, 'Seat-Sul-T0-R02-12');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 3', 'Seat 13', 'Este', 'Standard', false, 'Seat-Este-T0-R03-13');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 4', 'Seat 14', 'Oeste', 'Standard', false, 'Seat-Oeste-T0-R04-14');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 5', 'Seat 15', 'Norte', 'Standard', false, 'Seat-Norte-T0-R05-15');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 6', 'Seat 16', 'Sul', 'Standard', false, 'Seat-Sul-T0-R06-16');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 7', 'Seat 17', 'Este', 'Standard', false, 'Seat-Este-T0-R07-17');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 8', 'Seat 18', 'Oeste', 'Standard', false, 'Seat-Oeste-T0-R08-18');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 9', 'Seat 19', 'Norte', 'Standard', false, 'Seat-Norte-T0-R09-19');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 10', 'Seat 20', 'Sul', 'Standard', false, 'Seat-Sul-T0-R10-20');
+insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id) values (1, '2024-09-15 19:00:00', 'Gate A', 'Row 11', 'Seat 21', 'Este', 'Standard', false, 'Seat-Este-T0-R11-21');
 
-insert into tickets (event_id, gates_open, gate_id, row_id, seat_id, sector_id, ticket_type, state, seat_node_id)
-values (
-    1,
-    '2024-09-15 19:00:00',
-    'Gate A',
-    'Row 4',
-    'Seat 7',
-    'Sul',
-    'VIP',
-    true,
-    'Seat-Sul-T0-R04-07'  -- ID do seat no Map-Service
-);
